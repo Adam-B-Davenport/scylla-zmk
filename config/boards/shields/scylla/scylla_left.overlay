@@ -1,6 +1,6 @@
-// kiboard_left.overlay
+// SCYLLA_left.overlay
 
-#include "kiboard.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "scylla.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
     col-gpios

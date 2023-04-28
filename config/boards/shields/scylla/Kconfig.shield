@@ -1,5 +1,5 @@
-config SHIELD_kiboard_LEFT
-    def_bool $(shields_list_contains,kiboard_left)
+config SHIELD_SCYLLA_LEFT
+    def_bool $(shields_list_contains,SCYLLA_left)
 
-config SHIELD_kiboard_RIGHT
-    def_bool $(shields_list_contains,kiboard_right)
+config SHIELD_SCYLLA_RIGHT
+    def_bool $(shields_list_contains,SCYLLA_right)
