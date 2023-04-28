@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/matrix_transform.h>
+include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
@@ -25,11 +25,11 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,6) RC(3,7
 
         diode-direction = "row2col";
                 row-gpios
-            = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // Row 4 from the schematic file
-            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // Row 3 from the schematic file
-            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // Row 2 from the schematic file
-            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // Row 1 from the schematic file
-            , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // Row 0 from the schematic file
+            = <&gpio1 15 (GPIO_ACTIVE_HIGH)> // Row 4 from the schematic file
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH)> // Row 3 from the schematic file
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH)> // Row 2 from the schematic file
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH)> // Row 1 from the schematic file
+            , <&gpio0 9  (GPIO_ACTIVE_HIGH)> // Row 0 from the schematic file
             ;
 
     };
