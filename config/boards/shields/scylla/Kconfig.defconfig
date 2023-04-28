@@ -1,0 +1,23 @@
+if SHIELD_kiboard_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "kiboard"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_kiboard_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "kiboard r"
+
+endif
+
+if SHIELD_kiboard_LEFT || SHIELD_kiboard_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif
